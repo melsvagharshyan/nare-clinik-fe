@@ -11,7 +11,7 @@ export function ServicesSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2
           id="services-heading"
-          className="text-2xl font-semibold text-[#675447] sm:text-3xl"
+          className="font-reviews-serif text-2xl font-medium tracking-tight text-[#675447] sm:text-3xl"
         >
           Всё для вашей улыбки
         </h2>

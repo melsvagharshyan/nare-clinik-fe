@@ -100,7 +100,7 @@ export function TestimonialsSlider() {
             <button
               type="button"
               onClick={() => sliderRef.current?.slickPrev()}
-              className="flex size-11 items-center justify-center rounded-full border-2 transition hover:bg-white/80"
+              className="flex size-11 cursor-pointer items-center justify-center rounded-full border-2 transition hover:bg-white/80"
               style={{ borderColor: ACCENT, color: ACCENT }}
               aria-label="Предыдущий отзыв"
             >
@@ -109,7 +109,7 @@ export function TestimonialsSlider() {
             <button
               type="button"
               onClick={() => sliderRef.current?.slickNext()}
-              className="flex size-11 items-center justify-center rounded-full border-2 transition hover:bg-white/80"
+              className="flex size-11 cursor-pointer items-center justify-center rounded-full border-2 transition hover:bg-white/80"
               style={{ borderColor: ACCENT, color: ACCENT }}
               aria-label="Следующий отзыв"
             >

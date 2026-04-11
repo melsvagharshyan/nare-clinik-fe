@@ -24,7 +24,7 @@ export function SiteFooter() {
           </address>
         </div>
         <div>
-          <p className="text-lg font-semibold text-[#1e1e1e] sm:text-xl">
+          <p className="font-reviews-serif text-xl font-medium tracking-tight text-[#1e1e1e] sm:text-2xl">
             Режим работы
           </p>
           <ul className="mt-4 space-y-2 text-sm text-[#1e1e1e]">
@@ -34,7 +34,7 @@ export function SiteFooter() {
           </ul>
         </div>
         <div className="sm:col-span-2 lg:col-span-1">
-          <p className="text-lg font-semibold text-[#1e1e1e] sm:text-xl">
+          <p className="font-reviews-serif text-xl font-medium tracking-tight text-[#1e1e1e] sm:text-2xl">
             Связаться
           </p>
           <p className="mt-4 text-sm text-[#1e1e1e]">

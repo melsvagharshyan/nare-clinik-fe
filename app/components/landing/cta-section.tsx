@@ -11,7 +11,10 @@ export function CtaSection() {
     >
       <div className="mx-auto max-w-6xl px-4 text-center sm:px-6 lg:px-8">
         <div className="glass-dark mx-auto max-w-2xl rounded-3xl border border-white/20 bg-white/10 px-6 py-10 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.25)] sm:px-10 sm:py-12">
-          <h2 id="cta-heading" className="text-2xl font-semibold sm:text-3xl">
+          <h2
+            id="cta-heading"
+            className="font-reviews-serif text-2xl font-medium tracking-tight sm:text-3xl"
+          >
             Мы готовы, когда вы готовы
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-white/90">
