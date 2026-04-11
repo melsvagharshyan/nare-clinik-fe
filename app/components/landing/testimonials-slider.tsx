@@ -122,8 +122,8 @@ export function TestimonialsSlider() {
           {items.map((t, i) => (
             <div key={i} className="px-2 sm:px-3">
               <article
-                className="flex min-h-[240px] flex-col rounded-[28px] border bg-white p-7 sm:min-h-[260px] sm:p-8"
-                style={{ borderColor: `${ACCENT}55` }}
+                className="glass-card flex min-h-[240px] flex-col rounded-[28px] border border-white/60 bg-white/50 p-7 shadow-[0_8px_32px_-12px_rgba(30,30,30,0.09)] ring-1 ring-white/40 sm:min-h-[260px] sm:p-8"
+                style={{ borderColor: `${ACCENT}40` }}
               >
                 <span
                   className="font-reviews-serif select-none text-[3.25rem] leading-[0.85] sm:text-[3.5rem]"

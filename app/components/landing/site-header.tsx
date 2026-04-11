@@ -5,7 +5,7 @@ import { navItems, PRIMARY_PHONE_LABEL, PRIMARY_PHONE_TEL } from "./content";
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-dental-line/80 bg-dental-cream/95 backdrop-blur-md">
+    <header className="glass-header sticky top-0 z-40 border-b border-white/35 bg-dental-cream/55 shadow-[0_4px_24px_-8px_rgba(30,30,30,0.08)]">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link
           href="/"

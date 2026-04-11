@@ -50,13 +50,13 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="relative aspect-4/3 w-full overflow-hidden rounded-2xl border border-dental-line bg-dental-paper shadow-xl">
+        <div className="glass-card-strong relative aspect-4/3 w-full overflow-hidden rounded-2xl border border-white/50 bg-white/35 shadow-xl ring-1 ring-white/30">
           <div
-            className="absolute inset-0 bg-linear-to-br from-[#ece6df] via-dental-paper to-dental-gold-soft/40"
+            className="absolute inset-0 bg-linear-to-br from-white/50 via-[#f5f0eb]/40 to-dental-cta/20"
             aria-hidden
           />
           <div className="relative flex h-full flex-col justify-end p-8">
-            <p className="text-sm font-medium text-[#675447]">
+            <p className="rounded-xl border border-white/40 bg-white/25 px-4 py-3 text-sm font-medium text-[#675447] glass-card shadow-sm">
               Спокойный минималистичный интерьер — комфорт от зоны ожидания до
               кресла.
             </p>

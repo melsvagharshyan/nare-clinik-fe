@@ -21,7 +21,7 @@ export function HighlightsSection() {
           {highlights.map((item) => (
             <li
               key={item.title}
-              className="rounded-2xl border border-dental-line bg-white/70 p-8 shadow-sm"
+              className="glass-card rounded-2xl border border-white/55 bg-white/45 p-8 shadow-[0_8px_32px_-12px_rgba(30,30,30,0.1)] ring-1 ring-white/40"
             >
               <h3 className="text-lg font-semibold text-[#675447]">
                 {item.title}

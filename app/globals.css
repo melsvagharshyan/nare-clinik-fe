@@ -43,6 +43,49 @@ body {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
 
+/* Стекло: Safari */
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .glass-header {
+    -webkit-backdrop-filter: blur(20px) saturate(1.15);
+    backdrop-filter: blur(20px) saturate(1.15);
+  }
+  .glass-card {
+    -webkit-backdrop-filter: blur(16px) saturate(1.1);
+    backdrop-filter: blur(16px) saturate(1.1);
+  }
+  .glass-card-strong {
+    -webkit-backdrop-filter: blur(24px) saturate(1.12);
+    backdrop-filter: blur(24px) saturate(1.12);
+  }
+  .glass-dark {
+    -webkit-backdrop-filter: blur(14px) saturate(1.05);
+    backdrop-filter: blur(14px) saturate(1.05);
+  }
+  .glass-footer {
+    -webkit-backdrop-filter: blur(12px) saturate(1.08);
+    backdrop-filter: blur(12px) saturate(1.08);
+  }
+}
+
+/* Без backdrop-filter — плотнее фон, читаемость */
+@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .glass-header {
+    background-color: rgba(247, 243, 240, 0.97) !important;
+  }
+  .glass-card {
+    background-color: rgba(255, 255, 255, 0.92) !important;
+  }
+  .glass-card-strong {
+    background-color: rgba(255, 255, 255, 0.94) !important;
+  }
+  .glass-footer {
+    background-color: rgba(223, 206, 192, 0.98) !important;
+  }
+  .glass-dark {
+    background-color: rgba(255, 255, 255, 0.16) !important;
+  }
+}
+
 .font-reviews-serif {
   font-family: var(--font-reviews-serif), ui-serif, Georgia, "Times New Roman",
     serif;

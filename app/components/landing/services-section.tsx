@@ -23,7 +23,7 @@ export function ServicesSection() {
           {services.map((s) => (
             <li
               key={s.title}
-              className="group rounded-2xl border border-dental-line bg-white p-8 transition hover:border-dental-cta/50 hover:shadow-md"
+              className="glass-card group rounded-2xl border border-white/60 bg-white/50 p-8 shadow-[0_6px_28px_-10px_rgba(30,30,30,0.08)] ring-1 ring-white/35 transition hover:border-dental-cta/40 hover:shadow-lg"
             >
               <h3 className="text-lg font-semibold text-[#675447] transition group-hover:opacity-90">
                 {s.title}

@@ -7,7 +7,7 @@ export function SiteFooter() {
   return (
     <footer
       id="visit"
-      className="border-t border-dental-line/60 bg-dental-cta-soft py-14 text-[#1e1e1e]"
+      className="glass-footer border-t border-white/45 bg-dental-cta-soft/50 py-14 text-[#1e1e1e] shadow-[0_-8px_32px_-12px_rgba(30,30,30,0.06)]"
     >
       <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3 lg:px-8">
         <div>
