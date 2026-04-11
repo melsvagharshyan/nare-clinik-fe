@@ -1,6 +1,7 @@
 import { CtaSection } from "./landing/cta-section";
 import { HeroSection } from "./landing/hero-section";
 import { HighlightsSection } from "./landing/highlights-section";
+import ServicesMarquee from "./landing/services-marquee";
 import { ServicesSection } from "./landing/services-section";
 import { SiteFooter } from "./landing/site-footer";
 import { SiteHeader } from "./landing/site-header";
@@ -15,6 +16,7 @@ export function DentalClinicLanding() {
 
       <main id="main">
         <HeroSection />
+        <ServicesMarquee />
         <HighlightsSection />
         <ServicesSection />
         <TestimonialsSlider />
