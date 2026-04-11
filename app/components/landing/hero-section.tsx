@@ -1,0 +1,68 @@
+import Link from "next/link";
+import { LuPhone } from "react-icons/lu";
+import { PRIMARY_PHONE_LABEL, PRIMARY_PHONE_TEL } from "./content";
+
+export function HeroSection() {
+  return (
+    <section
+      className="relative overflow-hidden border-b border-dental-line/60 bg-linear-to-b from-dental-paper to-dental-cream"
+      aria-labelledby="hero-heading"
+    >
+      <div id="book" className="scroll-mt-20" tabIndex={-1} />
+      <div
+        className="pointer-events-none absolute -right-24 top-1/4 h-96 w-96 rounded-full bg-[#e8ddd4]/80 blur-3xl"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-dental-gold-soft/30 blur-3xl"
+        aria-hidden
+      />
+
+      <div className="relative mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-widest text-[#675447]">
+            Ваши стоматологи в районе
+          </p>
+          <h1
+            id="hero-heading"
+            className="mt-4 text-4xl font-semibold leading-tight tracking-tight text-[#675447] sm:text-5xl sm:leading-[1.1]"
+          >
+            Забота, к которой хочется возвращаться
+          </h1>
+          <p className="mt-6 max-w-lg text-lg leading-relaxed text-[#675447]">
+            Современная стоматология в тёплой атмосфере студии — понятные планы
+            лечения, деликатный подход и команда, для которой визит не в стресс.
+          </p>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <Link
+              href="#book"
+              className="inline-flex items-center justify-center rounded-full bg-[#C9A287] px-8 py-3.5 text-base font-semibold text-white transition hover:bg-[#b89176] active:bg-[#a67b62]"
+            >
+              Записаться онлайн
+            </Link>
+            <a
+              href={PRIMARY_PHONE_TEL}
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#DFCEC0] px-8 py-3.5 text-base font-semibold text-[#675447] transition hover:bg-[#d1bfae] active:bg-[#c4b0a0]"
+            >
+              <LuPhone className="size-5 shrink-0" aria-hidden />
+              <span>{PRIMARY_PHONE_LABEL}</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="relative aspect-4/3 w-full overflow-hidden rounded-2xl border border-dental-line bg-dental-paper shadow-xl">
+          <div
+            className="absolute inset-0 bg-linear-to-br from-[#ece6df] via-dental-paper to-dental-gold-soft/40"
+            aria-hidden
+          />
+          <div className="relative flex h-full flex-col justify-end p-8">
+            <p className="text-sm font-medium text-[#675447]">
+              Спокойный минималистичный интерьер — комфорт от зоны ожидания до
+              кресла.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f3f0;
+  --foreground: #1a231f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  /* Палитра в духе спа-стоматологии: тёплая бумага, шалфей, мягкое золото */
+  --color-dental-cream: #f7f3f0;
+  --color-dental-paper: #f7f3f0;
+  --color-dental-ink: #1a231f;
+  --color-dental-muted: #5c6560;
+  --color-dental-sage: #3d5a4f;
+  --color-dental-sage-deep: #2f453c;
+  --color-dental-sage-soft: #e8f0ec;
+  --color-dental-gold: #b8956a;
+  --color-dental-gold-soft: #d4bc9a;
+  --color-dental-line: #dcd4c8;
+  /* Заливки кнопок (дублируются в компонентах через bg-[#…] для надёжной отрисовки) */
+  --color-dental-cta: #c9a287;
+  --color-dental-cta-soft: #dfcec0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f7f3f0;
+    --foreground: #1a231f;
+  }
+}
+
+html {
+  background-color: var(--background);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.font-reviews-serif {
+  font-family: var(--font-reviews-serif), ui-serif, Georgia, "Times New Roman",
+    serif;
+}
+
+/* Имена в отзывах — тот же Cormorant, что у заголовка блока (перебивает стили slick) */
+.testimonials-slick-root .testimonial-author-name {
+  font-family: var(--font-reviews-serif), ui-serif, Georgia, "Times New Roman",
+    serif;
+}
+
+/* react-slick: отступы между слайдами и кастомные точки */
+.testimonials-slick-root .slick-list {
+  margin: 0 -0.5rem;
+}
+
+@media (min-width: 640px) {
+  .testimonials-slick-root .slick-list {
+    margin: 0 -0.75rem;
+  }
+}
+
+.testimonials-slick-root .slick-track {
+  display: flex !important;
+  align-items: stretch;
+}
+
+.testimonials-slick-root .slick-slide {
+  height: auto;
+}
+
+.testimonials-slick-root .slick-slide > div {
+  height: 100%;
+}
+
+.testimonials-slick-root .slick-dots {
+  position: relative;
+  bottom: auto;
+  margin-top: 2.5rem;
+  padding: 0;
+  display: flex !important;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.testimonials-slick-root .slick-dots li {
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+
+.testimonials-slick-root .slick-dots li button {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  text-shadow: none !important;
+  overflow: hidden;
+}
+
+.testimonials-slick-root .slick-dots li button:before {
+  content: "" !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: #c5a48a;
+  opacity: 0.35;
+  line-height: 0 !important;
+  font-size: 0 !important;
+  font-family: inherit !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.testimonials-slick-root .slick-dots li.slick-active button:before {
+  opacity: 1;
+  background: #a08060;
+}
