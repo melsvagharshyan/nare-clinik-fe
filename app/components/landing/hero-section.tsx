@@ -5,20 +5,18 @@ import { PRIMARY_PHONE_LABEL, PRIMARY_PHONE_TEL } from "./content";
 export function HeroSection() {
   return (
     <section
-      className="relative overflow-hidden border-b border-dental-line/60 bg-linear-to-b from-dental-paper to-dental-cream"
+      className="relative overflow-hidden border-b border-dental-line/60"
       aria-labelledby="hero-heading"
     >
-      <div id="book" className="scroll-mt-20" tabIndex={-1} />
       <div
-        className="pointer-events-none absolute -right-24 top-1/4 h-96 w-96 rounded-full bg-[#e8ddd4]/80 blur-3xl"
+        className="absolute inset-0 bg-[url('/h-mobile.jpg')] bg-cover bg-center bg-no-repeat sm:bg-[url('/h.jpg')]"
         aria-hidden
       />
-      <div
-        className="pointer-events-none absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-dental-gold-soft/30 blur-3xl"
-        aria-hidden
-      />
+      <div className="absolute inset-0 bg-white/80" aria-hidden />
 
-      <div className="relative mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
+      <div id="book" className="scroll-mt-20" tabIndex={-1} />
+
+      <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
         <div>
           <p className="text-sm font-semibold uppercase tracking-widest text-[#675447]">
             Ваши стоматологи в районе
