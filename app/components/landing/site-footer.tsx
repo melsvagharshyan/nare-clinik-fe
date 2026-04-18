@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { LuPhone } from "react-icons/lu";
 import { BrandLogo } from "./brand-logo";
+import { HomeLogoLink } from "./home-logo-link";
 import { PRIMARY_PHONE_LABEL, PRIMARY_PHONE_TEL } from "./content";
 
 export function SiteFooter() {
@@ -11,12 +11,9 @@ export function SiteFooter() {
     >
       <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3 lg:px-8">
         <div>
-          <Link
-            href="/"
-            className="inline-flex rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#675447]/40 focus-visible:ring-offset-2 focus-visible:ring-offset-dental-cta-soft"
-          >
+          <HomeLogoLink className="inline-flex rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#675447]/40 focus-visible:ring-offset-2 focus-visible:ring-offset-dental-cta-soft">
             <BrandLogo className="h-12 w-auto sm:h-14" />
-          </Link>
+          </HomeLogoLink>
           <address className="mt-6 not-italic text-sm leading-relaxed text-[#1e1e1e]">
             ул. Примерная, 201
             <br />
