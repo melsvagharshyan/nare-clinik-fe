@@ -19,7 +19,7 @@ const reviewsSerif = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Клиника Nare | Стоматология",
+  title: "Наре Дент",
   description:
     "Современная стоматология в тёплой атмосфере — терапия, эстетика, элайнеры, имплантация.",
 };

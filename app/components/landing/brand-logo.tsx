@@ -8,7 +8,7 @@ type BrandLogoProps = {
 export function BrandLogo({ className, priority = false }: BrandLogoProps) {
   return (
     <Image
-      src="/nare-clinic-logo.png"
+      src="/main_logo.svg"
       alt="Клиника Nare"
       width={232}
       height={88}
