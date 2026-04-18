@@ -48,7 +48,6 @@ export function HeroSection() {
             </a>
           </div>
         </div>
-
         <Image
           src="/hero-home-banner.png"
           alt="Интерьер клиники Nare"
