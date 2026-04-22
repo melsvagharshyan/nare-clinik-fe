@@ -229,3 +229,55 @@ body {
     opacity: 0;
   }
 }
+
+.floating-call-button {
+  isolation: isolate;
+  animation: floating-call-button-breathe 2s ease-in-out infinite;
+}
+
+.floating-call-button::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  border: 2px solid #d4bc9a;
+  z-index: -1;
+  pointer-events: none;
+  animation: floating-call-ring-pulse 2s ease-out infinite;
+}
+
+@keyframes floating-call-button-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 14px 34px -14px rgba(26, 35, 31, 0.6);
+  }
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 18px 36px -14px rgba(26, 35, 31, 0.68);
+  }
+}
+
+@keyframes floating-call-ring-pulse {
+  0% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+  70% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.35);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-call-button {
+    animation: none;
+  }
+  .floating-call-button::before {
+    animation: none;
+  }
+}
