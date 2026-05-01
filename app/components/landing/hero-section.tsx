@@ -16,7 +16,6 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-white/80" aria-hidden />
 
       <div id="book" className="scroll-mt-20" tabIndex={-1} />
-
       <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
         <div>
           <p className="text-sm font-semibold uppercase tracking-widest text-[#675447]">
