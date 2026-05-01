@@ -49,7 +49,7 @@ export function HeroSection() {
           </div>
         </div>
         <Image
-          src="/hero-home-banner.png"
+          src="/hero-home-banner.avif"
           alt="Интерьер клиники Nare"
           width={1200}
           height={900}
