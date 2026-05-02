@@ -14,6 +14,7 @@ export function MobileNav() {
   const [open, setOpen] = useState(false);
   const menuId = useId();
   const closeBtnRef = useRef<HTMLButtonElement>(null);
+  const panelRef = useRef<HTMLElement>(null);
   const prevFocusRef = useRef<HTMLElement | null>(null);
 
   const close = useCallback(() => setOpen(false), []);
@@ -35,6 +36,18 @@ export function MobileNav() {
     };
   }, [open, close]);
 
+  useEffect(() => {
+    if (!open) return;
+    const onPointerDown = (e: PointerEvent) => {
+      const target = e.target as Node;
+      if (panelRef.current?.contains(target)) return;
+      if (closeBtnRef.current?.contains(target)) return;
+      close();
+    };
+    document.addEventListener("pointerdown", onPointerDown, true);
+    return () => document.removeEventListener("pointerdown", onPointerDown, true);
+  }, [open, close]);
+
   return (
     <div className="relative md:hidden">
       {/* Overlay first in DOM; toggle button below stays above when menu is open (z-index). */}
@@ -45,14 +58,12 @@ export function MobileNav() {
         )}
         aria-hidden={!open}
       >
-        <button
-          type="button"
+        <div
           className="absolute inset-0 bg-[#1e1e1e]/45 backdrop-blur-[2px]"
-          aria-label="Закрыть меню"
-          tabIndex={-1}
-          onClick={close}
+          aria-hidden
         />
         <nav
+          ref={panelRef}
           id={menuId}
           className={clsx(
             "absolute right-0 top-0 flex h-full min-h-dvh w-[min(100%,20rem)] flex-col border-l border-white/40 bg-dental-cream/98 py-4 shadow-2xl backdrop-blur-lg transition-transform duration-200 ease-out",
