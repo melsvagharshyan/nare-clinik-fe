@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
 import { Cormorant_Garamond, Geist, Geist_Mono } from "next/font/google";
+import { LocalBusinessJsonLd } from "./components/seo/local-business-json-ld";
 import { FloatingCallButton } from "./components/landing/floating-call-button";
+import { rootMetadata } from "./lib/seo-metadata";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,11 +20,7 @@ const reviewsSerif = Cormorant_Garamond({
   weight: ["400", "500", "600", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "Наре Дент",
-  description:
-    "Современная стоматология в тёплой атмосфере — терапия, эстетика, элайнеры, имплантация.",
-};
+export const metadata = rootMetadata;
 
 export default function RootLayout({
   children,
@@ -36,6 +33,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${reviewsSerif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <LocalBusinessJsonLd />
         {children}
         <FloatingCallButton />
       </body>

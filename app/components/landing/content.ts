@@ -1,5 +1,5 @@
-export const PRIMARY_PHONE_TEL = "tel:+15555550100";
-export const PRIMARY_PHONE_LABEL = "(555) 555-0100";
+export const PRIMARY_PHONE_TEL = "tel:+79915268590";
+export const PRIMARY_PHONE_LABEL = "8 991 526 85 90";
 
 export const navItems = [
   { label: "О клинике", href: "#about" },

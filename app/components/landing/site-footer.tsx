@@ -15,9 +15,9 @@ export function SiteFooter() {
             <BrandLogo className="h-12 w-auto sm:h-14" />
           </HomeLogoLink>
           <address className="mt-6 not-italic text-sm leading-relaxed text-[#1e1e1e]">
-            ул. Примерная, 201
+            Тульская обл., г. Белёв,
             <br />
-            Бруклин, NY 11222, США
+            ул. Истоминская, д. 13 А
           </address>
         </div>
         <div>
@@ -25,9 +25,8 @@ export function SiteFooter() {
             Режим работы
           </p>
           <ul className="mt-4 space-y-2 text-sm text-[#1e1e1e]">
-            <li>Пн–чт: 8:00–18:00</li>
-            <li>Пт: 8:00–17:00</li>
-            <li>Сб: 9:00–15:00</li>
+            <li>Пн–сб: 9:00–14:00</li>
+            <li>Вс: выходной</li>
           </ul>
         </div>
         <div className="sm:col-span-2 lg:col-span-1">
