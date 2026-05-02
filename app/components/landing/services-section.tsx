@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { services } from "./content";
 
 export function ServicesSection() {
@@ -34,14 +33,6 @@ export function ServicesSection() {
             </li>
           ))}
         </ul>
-        <p className="mt-10">
-          <Link
-            href="#visit"
-            className="inline-flex font-semibold text-[#675447] underline-offset-4 hover:underline hover:opacity-90"
-          >
-            Все услуги
-          </Link>
-        </p>
       </div>
     </section>
   );

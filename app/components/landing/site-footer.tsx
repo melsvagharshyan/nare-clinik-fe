@@ -42,17 +42,10 @@ export function SiteFooter() {
               <span>{PRIMARY_PHONE_LABEL}</span>
             </a>
           </p>
-          <p className="mt-6 text-xs text-[#1e1e1e]">
-            Цветовая палитра вдохновлена тёплой атмосферой студии клиники{" "}
-            <a
-              href="https://www.smileloungebk.com/"
-              className="text-[#1e1e1e] underline-offset-2 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              SMILELOUNGE
-            </a>
-            .
+          <p className="mt-6 max-w-sm text-xs leading-relaxed text-[#1e1e1e]/85">
+            «Наре Дент» в Белёве — это стоматология, где светлые, спокойные тона
+            пространства поддерживают главное: внимательное отношение, понятные
+            решения и ощущение домашнего уюта там, где заботятся о вашей улыбке.
           </p>
         </div>
       </div>
