@@ -18,7 +18,7 @@ export function HeroSection() {
       <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
         <div>
           <p className="text-sm font-semibold uppercase tracking-widest text-[#675447]">
-            Ваши стоматологи в районе
+            Стоматология «Наре Дент» · г. Белёв, Тульская область
           </p>
           <h1
             id="hero-heading"
