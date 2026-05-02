@@ -1,7 +1,6 @@
 "use client";
 
 import clsx from "clsx";
-import Link from "next/link";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { LuCalendar, LuMenu, LuPhone, LuX } from "react-icons/lu";
 import {
@@ -9,6 +8,7 @@ import {
   PRIMARY_PHONE_LABEL,
   PRIMARY_PHONE_TEL,
 } from "./content";
+import { HashLink } from "./hash-link";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -90,12 +90,12 @@ export function MobileNav() {
           <ul className="flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto px-3 pt-4">
             {navItems.map((item) => (
               <li key={item.href}>
-                <Link
+                <HashLink
                   href={item.href}
                   className="block rounded-xl px-4 py-3 text-base font-medium text-[#1e1e1e] transition hover:bg-[#675447]/10 active:bg-[#675447]/15"
                 >
                   {item.label}
-                </Link>
+                </HashLink>
               </li>
             ))}
           </ul>
@@ -110,13 +110,13 @@ export function MobileNav() {
               <LuPhone className="size-4 shrink-0" aria-hidden />
               {PRIMARY_PHONE_LABEL}
             </a>
-            <Link
-              href="#book"
+            <HashLink
+              href="/#book"
               className="flex w-full items-center justify-center gap-2 rounded-full bg-[#C9A287] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#b89176] active:bg-[#a67b62]"
             >
               <LuCalendar className="size-4 shrink-0" aria-hidden />
               Записаться онлайн
-            </Link>
+            </HashLink>
           </div>
         </nav>
       </div>

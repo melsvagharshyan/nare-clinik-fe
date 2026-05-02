@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { LuPhone } from "react-icons/lu";
 import { BrandLogo } from "./brand-logo";
+import { HashLink } from "./hash-link";
 import { HomeLogoLink } from "./home-logo-link";
 import { MobileNav } from "./mobile-nav";
 import { navItems, PRIMARY_PHONE_LABEL, PRIMARY_PHONE_TEL } from "./content";
@@ -17,13 +17,13 @@ export function SiteHeader() {
           className="hidden items-center gap-8 text-sm font-medium text-[#1e1e1e] md:flex"
         >
           {navItems.map((item) => (
-            <Link
+            <HashLink
               key={item.href}
               href={item.href}
               className="transition-colors hover:opacity-75"
             >
               {item.label}
-            </Link>
+            </HashLink>
           ))}
         </nav>
         <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3">
@@ -34,12 +34,12 @@ export function SiteHeader() {
             <LuPhone className="size-4 shrink-0" aria-hidden />
             <span>{PRIMARY_PHONE_LABEL}</span>
           </a>
-          <Link
-            href="#book"
+          <HashLink
+            href="/#book"
             className="hidden rounded-full bg-[#C9A287] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#b89176] active:bg-[#a67b62] md:inline-flex"
           >
             Записаться онлайн
-          </Link>
+          </HashLink>
           <MobileNav />
         </div>
       </div>

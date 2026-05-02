@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { LuPhone } from "react-icons/lu";
 import { PRIMARY_PHONE_LABEL, PRIMARY_PHONE_TEL } from "./content";
+import { HashLink } from "./hash-link";
 
 export function HeroSection() {
   return (
@@ -31,12 +31,12 @@ export function HeroSection() {
             лечения, деликатный подход и команда, для которой визит не в стресс.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="#book"
+            <HashLink
+              href="/#book"
               className="inline-flex items-center justify-center rounded-full bg-[#C9A287] px-8 py-3.5 text-base font-semibold text-white transition hover:bg-[#b89176] active:bg-[#a67b62]"
             >
               Записаться онлайн
-            </Link>
+            </HashLink>
             <a
               href={PRIMARY_PHONE_TEL}
               className="inline-flex items-center justify-center gap-2 rounded-full bg-[#DFCEC0] px-8 py-3.5 text-base font-semibold text-[#675447] transition hover:bg-[#d1bfae] active:bg-[#c4b0a0]"

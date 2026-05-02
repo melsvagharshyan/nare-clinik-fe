@@ -15,7 +15,7 @@ export function DentalClinicLanding() {
       <SkipToContent />
       <SiteHeader />
 
-      <main id="main">
+      <main id="main" tabIndex={-1}>
         <HeroSection />
         <ServicesMarquee />
         <HighlightsSection />

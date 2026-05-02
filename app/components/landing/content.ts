@@ -2,9 +2,9 @@ export const PRIMARY_PHONE_TEL = "tel:+79915268590";
 export const PRIMARY_PHONE_LABEL = "8 991 526 85 90";
 
 export const navItems = [
-  { label: "О клинике", href: "#about" },
-  { label: "Услуги", href: "#services" },
-  { label: "Контакты", href: "#visit" },
+  { label: "О клинике", href: "/#about" },
+  { label: "Услуги", href: "/#services" },
+  { label: "Контакты", href: "/#visit" },
 ] as const;
 
 export const galleryItems = [

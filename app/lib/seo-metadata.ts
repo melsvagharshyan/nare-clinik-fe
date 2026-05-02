@@ -111,5 +111,8 @@ export const rootMetadata: Metadata = {
     "max-image-preview": "large",
     "max-video-preview": -1,
   },
+  verification: {
+    yandex: "f0e2eaef6ade35f2",
+  },
   other: clinicMetaOther,
 };
