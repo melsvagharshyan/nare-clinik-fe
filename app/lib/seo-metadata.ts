@@ -112,6 +112,7 @@ export const rootMetadata: Metadata = {
     "max-video-preview": -1,
   },
   verification: {
+    google: "jWv8bJnWf8Fh1gtlCFHlFus2hk_H5N5Y_S5yjQ87P-g",
     yandex: "f0e2eaef6ade35f2",
   },
   other: clinicMetaOther,
