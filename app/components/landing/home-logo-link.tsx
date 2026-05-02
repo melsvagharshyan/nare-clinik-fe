@@ -19,6 +19,7 @@ export function HomeLogoLink({ className, children }: HomeLogoLinkProps) {
       onClick={(e) => {
         if (pathname === "/") {
           e.preventDefault();
+          window.history.replaceState(null, "", "/");
           window.scrollTo({ top: 0, behavior: "smooth" });
         }
       }}

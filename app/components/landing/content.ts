@@ -3,9 +3,7 @@ export const PRIMARY_PHONE_LABEL = "8 991 526 85 90";
 
 export const navItems = [
   { label: "О клинике", href: "#about" },
-  { label: "Здание клиники", href: "#gallery" },
   { label: "Услуги", href: "#services" },
-  { label: "Новым пациентам", href: "#new-patients" },
   { label: "Контакты", href: "#visit" },
 ] as const;
 
